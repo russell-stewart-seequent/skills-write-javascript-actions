@@ -1,7 +1,11 @@
 name: "my joke action"
 
-description: "use an external API to get a joke"
+description: "use an external API to retrieve and display a joke"
+
+outputs:
+  joke-output:
+    description: "The resulting joke from the icanhazdadjoke API"
 
 runs:
-  using: "node12"
-  main: "dist/index.js"
+  using: "node16"
+  main: "main.js"
